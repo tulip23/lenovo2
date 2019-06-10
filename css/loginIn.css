@@ -1,0 +1,159 @@
+body{
+	background-color: #f7f7f7;
+}
+a:hover{
+	color: #ef1c22;
+}
+a{
+	color: #a4a3a3;
+}
+#header{
+	height: 31.3px;
+}
+#nav{
+	width: 1450px;
+	height: 31.2px;
+	background: #333;
+	color: lightgray;
+	float: left;
+}
+#left{
+	overflow: hidden;
+	float: left;
+}
+.btns{
+	float: left;
+	font-size: 12px;
+	padding:0 10px ;
+	line-height: 30px;
+	cursor: pointer;
+}
+#secpic{
+	width: 118.4px;
+	height: 150px;
+	color: gray;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	display: none;
+}
+#list{
+	float: left;
+}
+#logo{
+	width: 60px;
+	height: 180px;
+	float: left;
+}
+#logo img{
+	width: 60px;
+	height: 180px;
+	z-index: 9;
+}
+#register{
+	width: 358px;
+	height: 675.4px;
+	margin: 60px auto 140px;
+	background-color: white;
+	padding: 52px 249px 64px;
+	/*border: 1px solid black;*/
+}
+#total{
+	width: 358px;
+	height: 600px;
+	/*background-color: yellow;*/
+}
+#title{
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	/*background-color: yellowgreen;*/
+}
+#get{
+	width: 329.6px;
+	height: 45.6px;
+	/*background-color: mediumpurple;*/
+	border: 1px solid #d6d6d6d6;
+	line-height: 48px;
+	padding-left: 15px;
+	font-size: 14px;
+	color: #8c8c8c;
+	margin: 10px auto;
+	padding-right: 50px;
+}
+#auto{
+	display: inline-block;
+	width: 329.6px;
+	height: 45.6px;
+	font-size: 14px;
+	color: #000;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#register_now{
+	height: 49.6px;
+	width: 395px;
+	background-color: #ef3229;
+	text-align: center;
+	color: white;
+	line-height: 50px;
+	cursor: pointer;
+}
+#tap{
+	width: 395px;
+	margin-top: 38px;
+	margin-bottom: 14px;
+	overflow: hidden;
+}
+
+#per_register{
+	float: left;
+	color: #ef1c22;
+	font-size: 14px;
+	line-height: 14px;
+	cursor: pointer;
+}
+#comp_register{
+	color: #a4a3a3;
+	float: right;
+	font-size: 14px;
+	line-height: 14px;
+}
+#agree{
+	width: 395px;
+	height: 75px;
+	margin-top: 20px;
+	color: #757575;
+	/*background-color: lightgreen;*/
+}
+#heng{
+	text-align: center;
+	float: left;
+}
+#hh{
+	background-color: #a4a3a3;
+}
+#ha{
+	background-color: #a4a3a3;
+}
+#social{
+	width: 250px;
+	height: 37px;
+	/*background-color: green;*/
+	float: left;
+	text-align: center;
+	padding-left: 100px;
+}
+#iicon{
+	line-height: 37px;
+	width: 50px;
+	height: 37px;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+}
+#ii{
+	font-size: 20px;
+	float: left;
+}

@@ -1,0 +1,87 @@
+body,ul,li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+#Tcomputer{
+	width: 260px;
+	height: 384px;
+	float: left;
+	margin-left: 30px;
+	cursor: pointer;
+}
+#thinkpad2{
+	width: 1200px;
+	height: 450px;
+	text-align: center;
+	background-color: white;	
+}
+#thinkpad3{
+	width: 1200px;
+	height: 450px;
+	text-align: center;
+	background-color: white;	
+}
+#thinkpad4{
+	width: 1200px;
+	height: 450px;
+	text-align: center;
+	background-color: white;	
+}
+#thinkpad5{
+	width: 1200px;
+	height: 450px;
+	text-align: center;
+	background-color: white;	
+}
+
+#Tcomputer :hover{
+	box-shadow: 4px 4px 6px 6px gray;
+}
+#boxx{
+	width: 1200px;
+	height: 550px;
+	background-color: white;
+	position: relative;
+}
+#picbox{
+	width: 1200px;
+	height: 400px;
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+}
+.bigPic{
+	width: 1200px;
+	height: 450px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	transition: 0.5s;
+}
+.bigPic img{
+	width: 250px;
+	height: 384px;
+	float: left;
+}
+#btnBox{
+	width: 1200px;
+	height: 120px;
+	background-color: white;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.picBtn{
+	width: 270px;
+	height: 123px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: white;
+}
+.up{
+	background-color: white;
+}

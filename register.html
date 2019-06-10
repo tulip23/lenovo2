@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+		<div id="header" class="t">
+			<ul>
+			<li id="list"><div id="logo">
+				<img src="img/service/s_022.jpg" />
+					</div>
+					</li>
+					<li id="list"><div id="nav">
+					<ul id="left">
+					<li class="btns" style="margin-left: 100px;">联想首页</li>
+					<li class="btns">商城</li>
+					<li class="btns">社区</li>
+					<li class="btns">服务</li>
+					<li class="btns">资讯</li>
+					<li class="btns">门店</li>
+					<li class="btns">手机版</li>
+					<li class="btns" style="margin-left: 30px;"><img src="img/service/1cab7988-c2d0-4f41-a88c-1e2f198ac9a7_1.png"></li>
+					<li class="btns" style="margin-left: ;">会员中心有五亿豪礼任意领，立即查看</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="register" class="c">
+		<div id="total">
+			<div id="title">注册联想会员</div>
+			<div id="tap">
+			<h3 id="per_register">个人用户注册</h3>
+			<i id="line"></i>
+			<h3 id="comp_register">企业用户注册</h3>
+			</div>
+			<input type="text" placeholder="输入手机号" id="phone" class="btn" />
+			<p id="p1">请输入手机号码</p>
+			<div id="strag">
+			<button id="but">>></button>
+			<div id="slide-add-img"style="line-height: 50px; font-size: 14px; color: rgb(66,66,66);">请按住滑块，拖到指定位置
+			</div>
+			</div>
+			
+			<div class="inf">
+			<input type="text" placeholder="短信验证码" id="code" class="btn" >
+			
+			<div id="getinf" class="btn">获取验证码</div>
+			<p id="p2">请输入验证码</p>
+			</div>
+			
+			<input type="text" placeholder="输入密码，密码长度8-20位字符" id="get" class="btn">
+			<p id="p3">请输入密码</p>
+			<input type="text" placeholder="再次输入密码" id="get" class="btn">
+			<p id="p4">请再次输入密码</p>
+			<div id="register_now">立即注册</div>
+			<div id="agree">
+				<p id="obey">注册账号即表示您同意并遵守联想<a href="#" style="color: black;"><b>使用条款</b></a>和<a href="#" style="color: black;"><b>隐私策略</b></a></p>
+				<p id="have">已有账号，<a href="#" style="color: black;"><b>点此登录</b></a></p>
+			</div>
+		</div>
+	</div>
+	<script>
+			//01.布局
+			//02. input  blur是焦点
+			//    正则表达式 reg
+			//    reg.test     input value
+			//03.通过判断校验的布尔值，控制提示信息 p 显示隐藏
+			$('.btn').blur(function(){
+				//取到input的value值，用.val()
+				var index = $('.btn').index(this);
+				var value = $('.btn').eq(index).val();
+				var reg;
+				switch(index){
+					case 0:
+					  reg=/^1\d{10}$/;
+					  break;
+					case 1:
+					  reg=/\d{4}$/;
+					  break;
+					case 2:
+					  reg=/^\d{6,12}$/;
+					  break;	
+					case 3:
+					  reg=/^\d{6,12}$/;
+					  break;
+				}
+				checked( reg,value,index )
+			})
+			
+			function checked( reg,value,index ){
+				var resulet = reg.test(value);
+				console.log(value,resulet,reg);
+				if(resulet==false){
+					$('p').eq(index).css('color','orange');
+				}else{
+					$('p').eq(index).css('color','white');
+				}
+			}
+			
+		</script>
+	
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/goodsdetail.css" />
+		<script type="text/javascript" src="js/goodsdetail.js" ></script>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+				<!-------------------放大镜------------------->
+					<div id="bbox">
+						<div id="spic">
+							<img src="img/tab/21.jpg" id="s" />
+						<div id="bpic">
+							<img src="img/tab/21.jpg" id="b" />
+						</div>
+						<div id="square"></div>
+						</div>
+						
+						<ul id="urll">
+							<li class="btn"></li>
+							<li class="btn"></li>
+							<li class="btn"></li>
+							<li class="btn"></li>
+							<li class="btn"></li>
+						</ul>
+					</div>
+					<script>
+						$('#spic').mousemove(function(event){
+					var nowleft = Math.floor(event.pageX - $('#spic').offset().left)-50;
+					var nowtop = event.pageY-$('#spic').offset().top-50;
+					console.log(nowleft,nowtop)
+					if(nowleft<0){
+						nowleft = 0;
+					}
+					if(nowleft>380){
+						nowleft = 380;
+					}
+					if(nowtop<0){
+						nowtop = 0;
+					}
+					if(nowtop>420){
+						nowtop = 420;
+					}
+		
+				$('#square').css({
+					'top':nowtop,
+					'left':nowleft
+				})
+				
+				$('#b').css({
+					'top':-nowtop*2,
+					'left':-nowleft*2
+			})
+		})					
+			</script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+#bbox{
+	width: 618px;
+	height: 663px;
+	background: pink;
+	position: absolute;
+	top: 180px;
+	left: 60px;
+	
+}
+.bbpic{
+	width: 520px;
+	height: 520px;				
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.btn{
+	width: 84px;
+	height: 84px;
+	/*background: orange;*/	
+	text-align: center;	
+	line-height: 40px;	
+	float: left;
+	margin-left: 20px;
+	border: 1px solid lightgray;
+}
+.btn:nth-child(1){
+	background-image: url(../img/tab/1.jpg);
+	background-size: 100% 100%;						
+}
+.btn:nth-child(2){
+	background-image: url(../img/tab/2.jpg);	
+	background-size: 100% 100%;				
+}		
+.btn:nth-child(3){
+	background-image: url(../img/tab/3.jpg);
+	background-size: 100% 100%;				
+}
+.btn:nth-child(4){
+	background-image: url(../img/tab/4.jpg);
+	background-size: 100% 100%;				
+}	
+.btn:nth-child(5){
+	background-image: url(../img/tab/5.jpg);	
+	background-size: 100% 100%;				
+}	
+#urll{
+	width: 530px;
+	height: 88px;
+	/*background-color: green;*/
+	margin-left: 40px;
+
+}
+#spic,#bpic{
+	width: 520px;
+	height: 520px;
+	/*background: pink;*/
+}
+#spic{
+	position: relative;
+	margin: 0 auto;
+}
+#s{
+	width: 520px;
+	height: 520px;
+}
+#bpic{
+	position: absolute;
+	left: 600px;
+	top: 0;
+	overflow: hidden;
+	/*background: yellow;*/
+}
+#b{
+	width: 1040px;
+	height: 1040px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#square{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:0;
+	left: 0;
+	background: white;
+	border-radius: 14px;
+	opacity: 0.5;
+}

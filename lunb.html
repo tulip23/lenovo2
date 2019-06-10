@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/lunbo.css" />
+	</head>
+	<body>
+		
+			<!-----------商品轮播------------>
+			
+			
+		<div id="boxx" class="c">
+			<ul id="btnBox">
+				<li class="picBtn" id="pp01">
+					<img src="img/icons/3yi1cj2khuey735rxptylvu7j6iab9416753.png"/>
+					<p>商用产品</p></li>
+				<li class="picBtn" id="pp02">
+					<img src="img/icons/7bb20n8p5n8xexzbfpby6kbzqe1ecu229045.png"/>
+					<p>商用解决方案</p></li>
+				<li class="picBtn" id="pp03">
+					<img src="img/icons/4jc8z30r7g3y8ckrbkxxwsnz7c7sfe943670.png" />
+					<p>数据中心产品</p></li>
+				<li class="picBtn" id="pp04">
+					<img src="img/icons/ug64nmyuv4hdoydc99klhwvdkq2akj985322.png" />
+					<p>数据中心解决方案</p>
+				</li>
+	
+			</ul>
+			
+			<ul id="picbox">
+				<li class="bigPic">
+				<div id="thinkpad2" class="c">
+			<ul class="up">
+				<li id="Tcomputer">
+				<img src="img/screenshot/3.PNG" />
+				</li>
+				<li id="Tcomputer">
+				<img src="img/screenshot/2.PNG" />	
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/12.PNG" />			
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/16.PNG" />
+				</li>
+			</ul>		
+		</div>
+				</li>
+				<li class="bigPic">
+				<div id="thinkpad3" class="c">
+					<ul class="up">
+						<li id="Tcomputer">
+						<img src="img/screenshot/17.PNG" />
+						</li>
+						<li id="Tcomputer">
+						<img src="img/screenshot/11.PNG" />	
+						</li>
+						<li id="Tcomputer">
+							<img src="img/screenshot/00.PNG" />			
+						</li>
+						<li id="Tcomputer">
+							<img src="img/screenshot/17.PNG" />
+						</li>
+					</ul>		
+				</div>
+				</li>
+				<li class="bigPic">
+				<div id="thinkpad4" class="c">
+					<ul class="up">
+				<li id="Tcomputer">
+				<img src="img/screenshot/53.PNG" />
+				</li>
+				<li id="Tcomputer">
+				<img src="img/screenshot/65.PNG" />	
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/52.PNG" />			
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/66.PNG" />
+				</li>
+			</ul>		
+		</div>
+				</li>
+				<li class="bigPic">
+				<div id="thinkpad5" class="c">
+				<ul class="up">
+				<li id="Tcomputer">
+				<img src="img/screenshot/14.PNG" />
+				</li>
+				<li id="Tcomputer">
+				<img src="img/screenshot/15.PNG" />	
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/24.PNG" />			
+				</li>
+				<li id="Tcomputer">
+					<img src="img/screenshot/7.PNG" />
+				</li>
+			</ul>		
+		</div>
+		</li>
+
+		</ul>
+
+		</div>
+		<script>
+		var oPicBtn = document.getElementsByClassName('picBtn');
+		var oBigPic = document.getElementsByClassName('bigPic');	
+		slider()
+		function slider(){
+			
+			inter ( );
+			
+			var iNow = 0;
+			var timer;
+			
+			for(var i = 0;i<oPicBtn.length;i++){
+				console.log(i)
+				bind(i)
+			}
+			
+			function bind(index){
+				oPicBtn[index].onmouseover= function(){
+					clearInterval(timer);
+					iNow = index;
+					console.log('dianji'+index )
+					changePic( index )
+					inter()
+				}
+			}
+			
+			function changePic ( index ){						
+				for(var j = 0;j<oBigPic.length;j++){
+					oBigPic[j].style.opacity = 0;
+					if (j==index) {
+						oBigPic[index].style.opacity = 1;
+					}
+				}
+			}
+			//定时器 
+			function inter ( ){						
+				timer = setInterval(function(){
+					iNow++;
+					console.log('zidong'+iNow)
+					if( iNow>4){
+						iNow = 0
+					}
+					changePic ( iNow )
+				},2000)
+			}
+			}
+		</script>
+	</body>
+</html>

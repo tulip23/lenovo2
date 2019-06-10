@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/detail.js" ></script>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+			<!------------导航栏-------------->
+	<div id="header" class="t">
+		<ul id="heng">
+		<li class="list"><div id="logo">
+			<img class="logo" src="img/service/s_022.jpg" />
+		</div>
+		</li>
+		<li class="list"><div id="nav">
+			<ul id="left">
+				<li class="btns" style="margin-left: 100px;"><a href="index.html" style="color: gray;">联想首页</a></li>
+				<li class="btns"><a href="ShoppingMall.html">商城</a></li>
+				<li class="btns">社区</li>
+				<li class="btns"><a href="service.html">服务</a></li>
+				<li class="btns">资讯</li>
+				<li class="btns">门店</li>
+				<li class="btns" id="phone">手机版
+					<div id="secpic">
+						<p >联想官方联系微信</p>
+						<img src="img/service/erweima_fuwu.png"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</li>
+		<li class="list">
+			<div id="nav2">
+			<ul id="right">
+				<li class="btns1" style="margin-left: 100px;"><b>全部分类</b></li>
+				<li class="btns1">私人订制</li>
+				<li class="btns1">极速到家</li>
+				<li class="btns1">合伙人</li>
+				<li class="btns1">以旧换新</li>
+				<li class="btns1" id="phone1">0元试用</li>
+				<li class="btns1">企业采购</li>
+				<li class="btns1">兑换中心</li>
+			</ul>
+			<ul id="right1">
+				<li class="btns1">
+					<div id="two">
+						<input  class="inp" type="text" placeholder="     拯救者 Y7000 高瑟域版"/>
+						<a class="radbox"></a>
+					</div>				
+				</li>
+				<li class="btns1" style="float: right;">登录</li>
+			</ul>
+		</div>
+		</li>
+		<li class="list"><div id="nav12">
+				<p style="margin-left: 30px;">首页&nbsp;>&nbsp;商品详情&nbsp;>&nbsp;联想S5 Pro+6GB &nbsp;纯臻金</p>
+		</li>
+	</ul>
+</div>
+
+<div id="head" class="t">
+	<ul>
+		<li id="one">
+			<img src="img/service/s_023.jpg" />
+		</li>
+		<li id="one">
+			<div id="nav3">
+				<ul id="right">
+				<li class="btns1" style="margin-left: 100px;"><b>全部分类</b></li>
+				<li class="btns1">私人订制</li>
+				<li class="btns1">极速到家</li>
+				<li class="btns1">合伙人</li>
+				<li class="btns1">以旧换新</li>
+				<li class="btns1">0元试用</li>
+				<li class="btns1">企业采购</li>
+				<li class="btns1">兑换中心</li>
+			</ul>
+			<ul id="right1">
+				<li class="btns1">
+					<div id="two">
+						<input  class="inp" type="text" placeholder="     拯救者 Y7000 高瑟域版"/>
+						<a class="radbox1"></a>
+					</div>
+					
+					
+				</li>
+				<li class="btns1" style="float: right;">登录</li>
+			</ul>
+		</div>
+		</li>
+	</ul>
+</div>		
+<!----------------------右边位置定位------------------------------>
+	<div id="fixed">
+		<ul>
+			<li class="fix" id="fix01"></li>
+			<li class="fix" id="fix02"></li>
+			<li class="fix" id="fix03"></li>
+			<li class="fix" id="fix04"></li>
+			<li class="fix" id="fix05" style="height: 54px;"></li>
+			<li class="fix" id="fix06" style="height: 76px;"></li>
+			<li class="fix" id="fix07" style="height: 20px; border: none;"></li>
+		</ul>
+	</div>
+
+			<div id="fix11"></div>
+			<div id="fix12"></div>
+			<div id="fix13"></div>
+			<div id="fix14"></div>
+				
+		<!------------------tab切换--------------------->
+<!--		<div id="bbox"></div>-->
+		
+		<div id="bbox">
+			<div id="spic">
+				<img src="img/tab/21.jpg" id="s" />
+			<div id="bpic">
+				<img src="img/tab/21.jpg" id="b" />
+			</div>
+			<div id="square"></div>
+			</div>
+		</div>
+		
+<!-------------------------通栏定位-------------------------->
+		<div id="contain" class="t">
+			<div id="all" class="c">
+				<div id="Lleft">
+					<li id="icc">
+						<img src="img/productdetl/ewm_icon.jpg" />
+					</li>
+					<li id="icc">
+						<img src="img/sprites/goumaizixun.jpg" />
+					</li>
+				</div>
+				
+				<div id="Rright">
+					<span id="stock" class="operate">有库存</span>
+					<span id="reduce" class="redbuy"></span>
+					<input id="num" class="txt" type="text" value="1" />
+					<span id="add" class="addbuy"></span>
+					
+					<div id="money">
+						<span id="Mprice">商城价:</span>
+						<span id="unit"></span>
+						<span id="price">1198.00</span>
+					</div>
+					<div id="buy_now">
+						<button id="b_now" class="pay_button">立即购买</button>
+						<button id="b_car" class="car_button">加入购物车</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="descript">
+			<span id="title">
+				联想S5&nbsp;Pro&nbsp;6GB&nbsp;纯臻金
+			</span>
+			<span id="zipai">
+				偶像级自拍&nbsp;|&nbsp;Pro前后200万AI四摄&nbsp;|&nbsp;深度相机光学变焦&nbsp;|&nbsp;零光感人脸解锁	
+			</span>
+			<p id="ltitle">
+				促销信息
+			</p>
+			<p id="cheap">
+				【惠】&nbsp;上市价1298，活动价1198
+			</p>
+			<p id="cheap">
+				【温馨提示】&nbsp;如无质量问题，联想手机激活后将不支持七天无理由退货，请您谅解！
+			</p>
+				<span id="ltitle">手机内存：</span>
+			<div id="color">
+
+				<div id="frame">
+					星耀黑
+				</div>
+				<div id="frame" style="border: 1px solid red;">
+					纯臻金
+				</div>
+				<div id="frame">
+					冰魄蓝
+				</div>
+			</div>
+			<span id="ltitle">手机颜色：</span>
+			<div id="color">
+				<div id="frame" style="border: 1px solid red;">
+					6GB+64GB
+				</div>
+				<div id="frame">
+					GT版&nbsp;6GB+64GB
+				</div>
+				<div id="frame">
+					GT版&nbsp;4GB+64GB
+				</div>
+			</div>			
+		</div>
+		
+		<!----------------文字和图片的分界-------------------->
+		<div id="desperate" class="c">
+			<ul>
+				<li id="three" style="color: #e2231a;">商品详情</li>
+				<li id="three">配置信息</li>
+				<li id="three">商品评价(841)</li>
+			</ul>
+		</div>
+		
+		<div id="imglist" class="c">
+			<ul>
+			<li><img src="img/productdetl/alioWA0rw2G98ALkBxCkTlNfp-5109.jpg" /></li>
+			<li><img src="img/productdetl/hALzTWU3JNEZgOJqbdubuLs7H-9486.jpg" /></li>
+			<li><img src="img/productdetl/pBZaRRKPcb7xPQ3fjSFV7pn5u-0146.jpg" /></li>
+			<li><img src="img/productdetl/JZrf6ctvjYHPrqBwHDg0ZQjXS-6600.jpg" /></li>
+			<li><img src="img/productdetl/l9hHYt2FChwsCgcYGmpqvhw8f-6624.jpg" /></li>
+			<li><img src="img/productdetl/xAOrPWuAILIf1A0VcQ1hPeeaH-5737.jpg" /></li>
+			<li><img src="img/productdetl/a454pQzGywBTJIWbBvUMW2OMF-3034.jpg" /></li>
+			<li><img src="img/productdetl/czUBSOYtNwFIknvf1bBUwTw37-2940.jpg" /></li>
+			<li><img src="img/productdetl/RGTgVIwG7ATF0p0h6TiL810lN-7407.jpg" /></li>
+			<li><img src="img/productdetl/veBrCCNoy08c1cb1dM8fWqogc-8784.jpg" /></li>
+			<li><img src="img/productdetl/dlb4nR6rtAwoQTAQUgFs6R2tE-1759.jpg" /></li>
+			<li><img src="img/productdetl/5BdQfQY01ejsv7pJDLCCo4nNl-7386.jpg"/></li>
+			<li><img src="img/productdetl/gKWY6xGIUIkI1Xfbz28vnQItB-0336.jpg" /></li>
+			<li><img src="img/productdetl/4FCW7wD6AQIqLTE6bws2R3JEK-5222.jpg" /></li>
+			<li><img src="img/productdetl/Hag7I4k87LXlbTBcOAGL6LYwb-3939.jpg" /></li>
+			<li><img src="img/productdetl/dGlgiLf53JiIugqPkUDMg20NK-3454.jpg" /></li>
+			<li><img src="img/productdetl/nwIHTU3CvIKbMtQLyAa5lM1oB-6498.jpg" /></li>
+			<li><img src="img/productdetl/24EHn25uxj4lhmgQeUHAQw69W-0714.jpg" /></li>
+			<li><img src="img/productdetl/xDaKYU7OfyGNBQ9aT50QyFkKR-6555.jpg" /></li>
+			<li><img src="img/productdetl/a2cAeLMk1u2nwuSWR1X0auWfD-2023.jpg" /></li>
+			<li><img src="img/productdetl/jkFLypdN91A9ZSWQXh0kvvfYS-0739.jpg" /></li>
+			<li><img src="img/productdetl/3Gghzb8MS5sxvhjwfBMSNOkP4-0987.jpg" /></li>
+			<li><img src="img/productdetl/miMZHPChPhGn3CHez2WkkxvV1-9102.jpg" /></li>
+			<li><img src="img/productdetl/Ei0ncEWhNrfY9OnTPzA7Lncct-8916.jpg" /></li>
+			<li><img src="img/productdetl/pcmianzeshengming.jpg" /></li>	
+			<li id="longth" class="c">
+				<img src="img/productdetl/8518047e-a59d-4123-ad1f-4a68391ec161.jpg" />
+			</li>
+			</ul>
+		</div>
+		<!-------------------------------白底黑字部分---------------------------------->
+		<div id="blackwhite" class="c">
+			<ul>
+				<li id="twodesc">
+					<p id="htitle">财务指南</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;">服务商信息</p></a>
+					<p id="sectitle"><a href="#" style="color: #000;">购买流程</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">注册登录</a></p>
+				</li>
+				<li id="twodesc"><a href="#"></a>
+					<p id="htitle">配送方式</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;">配送方式</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">配送方式信息</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">签收原则 </a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">物流查询 </a></p>
+					
+				</li>
+				<li id="twodesc">
+					<p id="htitle">支付方式</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;">分期支付 </a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">支付方式 </a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">支付问题 </a></p>
+				</li>
+				<li id="twodesc">
+					<p id="htitle">订单信息</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;"></a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">订单信息</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">发票信息</a></p>
+				</li>
+				<li id="twodesc">
+					<p id="htitle">售后服务</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;">售后服务总则</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">24小时在线客服</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">手机激活查询</a></p>
+				</li>
+				<li id="twodesc">
+					<p id="htitle">其他说明</p>
+					<p id="sectitle" style="margin-top: 10px;"><a href="#" style="color: #000;">服务承诺</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">账号安全</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">手机产品购买须知</a></p>
+					<p id="sectitle"><a href="#" style="color: #000;">环境信息</a></p>
+				</li>
+			</ul>
+		</div>
+	<!----------------底部黑色说明部分------------------>
+		<div id="total" class="t">
+			<div id="content" class="c">
+				<ul id="six">
+					<li id="detail">
+						<p id="title2"><a href="#" style="color: #ccc;">关于联想</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">投资者关系</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">工作机会</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联系我们</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">销售网点查询</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">服务网点查询</a></p>
+
+					</li>
+					<li id="detail">
+						<p id="title2"><a href="#" style="color: #ccc;">联想商城</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">0元试用</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">极速到家</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想合伙人</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">私人定制</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">以旧换新</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想众筹</a></p>
+					</li>
+					<li id="detail">
+						<p id="title2"><a href="#" style="color: #ccc;">联想服务</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">驱动与软件下载</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想知识库</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">24小时智能客服</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">保修和配置查询</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">服务政策查询</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">上门快修</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">延长保修</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想IT管理服务</a></p>
+					</li>
+					<li id="detail">
+						<p id="title2"><a href="#" style="color: #ccc;">联想网站群</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想创设</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">聚享汇</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想电脑管家</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想超融合</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想研究院</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">智慧医疗</a></p>
+					</li>
+					<li id="detail">
+						<p id="title2"><br /></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想百应平台</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想租赁商城</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想企业网盘</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">ThinkPad官网</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">lecoo商城</a></p>
+						<p id="choice"><a href="#" style="color: #ccc;">联想大数据</a></p>
+					</li>
+					<li id="detail">
+						<p id="title2">联想官方社交平台</a></p>
+						<div id="social">
+								<ul>
+							<li id="iicon" class="s001">
+								<span class="iconfont" id="ii">&#xe61a;</span>
+							</li>
+							<li id="iicon" class="s002">
+								<span class="iconfont" id="ii">&#xe60c;</span>
+								
+							</li>
+							<li id="iicon" class="s003">
+								<span class="iconfont" id="ii">&#xe6bb;</span>
+								
+							</li>
+							<li id="iicon" class="s004">
+								<span class="iconfont" id="ii">&#xe506;</span>
+							</li>
+						</ul>
+						</div>
+						<p id="choice"><a href="#" style="color: #ccc;">选择国家或地区</a></p>
+						<div id="Pchina">
+							<img src="img/indexcarousel/dc95e9d6-bef7-4f4b-8b03-e6c3deeaa5a7.jpg" />
+
+						<div id="long">
+							<div id="contentlist">
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+								<p>4</p>
+								<p>5</p>
+								<p>6</p>
+								<p>7</p>
+								<p>8</p>
+								<p>9</p>
+							</div>
+							<div class="scroll">
+								<div class="bar"></div>
+							</div>
+							</div>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+			
+			<hr size="1" width="100%" />
+			<!-------------------最后一部分--------------->
+		<div id="lastorder" class="c">
+			<span class="lef">
+				<a href="#" style="color: #CCCCCC;">版权所有：1998-2019联想集团</a>
+				<span id="shu">|</span>
+				<a href="#" style="color: #CCCCCC;">法律公告</a>
+				<span id="shu">|</span>
+				<a href="#" style="color: #CCCCCC;">隐私保护</a>
+				<span id="shu">|</span>
+				<a href="#" style="color: #CCCCCC;">产品保护</a>
+			</span>
+			
+			<span class="rig">
+				<a href="#" style="color: #CCCCCC;">11035381</a>
+				<span id="shu">|</span>
+				<a href="#" style="color: #CCCCCC;">京公网安备110108007970号</a>
+				<span id="shu">|</span>
+				<a href="#" style="color: #CCCCCC;">营业执照：110000410127232</a>
+			</span>
+		</div>						
+		</div>	
+		<script>
+			$('#spic').mousemove(function(event){
+					var nowleft = Math.floor(event.pageX - $('#spic').offset().left)-50;
+					var nowtop = event.pageY-$('#spic').offset().top-50;
+					console.log(nowleft,nowtop)
+					if(nowleft<0){
+						nowleft = 0;
+					}
+					if(nowleft>380){
+						nowleft = 380;
+					}
+					if(nowtop<0){
+						nowtop = 0;
+					}
+					if(nowtop>420){
+						nowtop = 420;
+					}
+		
+				$('#square').css({
+					'top':nowtop,
+					'left':nowleft
+				})
+				
+				$('#b').css({
+					'top':-nowtop*2,
+					'left':-nowleft*2
+			})	
+			})
+		</script>
+	</body>
+</html>
